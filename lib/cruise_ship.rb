@@ -6,8 +6,13 @@
 # suite_e: "Crumpet the Elf"
 # }
 
-def select_winner(passengers)
-  
+def select_winner(name)
+  passengers.each do |room, passenger|
+    if room == "suite_a" && passenger.start_with?("A")
+      return #{passenger}
+    end
+  end
+end
 
 
 
