@@ -7,7 +7,7 @@
 # }
 
 def select_winner(name)
-  winner = ""
+  winner = []
   name.each do |room, passenger|
     if room == "suite_a" && passenger.start_with?("A")
       passenger = winner 
